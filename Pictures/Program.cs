@@ -10,7 +10,7 @@ namespace Pictures
     {
         static void Main(string[] args)
         {
-
+            Console.WriteLine();
         }
     }
 }

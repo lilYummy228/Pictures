@@ -10,7 +10,13 @@ namespace Pictures
     {
         static void Main(string[] args)
         {
-            Console.WriteLine();
+            int availablePicturesPlaces = 3;
+            int picturesCount = 52;
+            int fullRowCount = picturesCount/ availablePicturesPlaces;
+            int picturesBeyond = picturesCount % availablePicturesPlaces;
+            Console.WriteLine($"Помещающихся в ряд картинок: {availablePicturesPlaces}\n" +
+                $"Всего картинок: {picturesCount}\nПолностью заполненных картинками рядов: {fullRowCount}" +
+                $"\nКартинок сверх меры: {picturesBeyond}.");
         }
     }
 }
